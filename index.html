@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("https://th.bing.com/th/id/R.12d7a9f7f2b24adea85f87c511ca4c52?rik=CUCXgCmiGybB2w&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fBest-Free-nature-Images-hd.jpg&ehk=A%2fMmi34yK6d9JvrBJ3cxSAv%2fP%2fZqn7Rla6CwxQkYDXk%3d&risl=&pid=ImgRaw&r=0");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .rain {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("./raining.png");
+        animation: raining 1s linear infinite;
+      }
+      @keyframes raining {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 10% 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rain"></div>
+  </body>
+</html>

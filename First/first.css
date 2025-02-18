@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    background-color: #191825;
+    position: relative;
+    display: flex;
+
+    /* second trick---- to put at center */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* third trick------to put at center */
+    /* display: grid;
+    place-items:center; */
+
+    /* fourth trick------to put at center */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    
+   
+}
+/* put it at center ----first trick*/
+/* .child{
+
+    background-color: blue;
+    width:250px;
+    height:250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+ 
+
+/* fifth flex to keep item at center  but the display:flex at parent*/
+/* .child{
+    background-color: blue;
+    width:250px;
+    height:250px;
+    margin: auto;
+} */
+ .child{
+    background-color: blue;
+    width:250px;
+    height:250px;
+    margin: auto;
+    color: rgb(254, 253, 253);
+    text-transform: uppercase;
+    /* text-center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 

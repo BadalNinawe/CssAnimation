@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .container-img {
+        width: 60vw;
+        height: 40rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        background-image: url("https://th.bing.com/th/id/R.12d7a9f7f2b24adea85f87c511ca4c52?rik=CUCXgCmiGybB2w&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fBest-Free-nature-Images-hd.jpg&ehk=A%2fMmi34yK6d9JvrBJ3cxSAv%2fP%2fZqn7Rla6CwxQkYDXk%3d&risl=&pid=ImgRaw&r=0");
+        background-size: cover;
+        animation: gallery 15s linear infinite;
+      }
+      @keyframes gallery {
+        0% {
+          background-image: url("https://wallpaperaccess.com/full/653973.jpg");
+        }
+
+        20% {
+          background-image: url("https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+        }
+        40% {
+          background-image: url("https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+        }
+        60% {
+          background-image: url("https://th.bing.com/th/id/OIP.J9sfzSNX-OJxedkKslhaXAHaE7?rs=1&pid=ImgDetMain");
+        }
+        80% {
+          background-image: url("https://wallpapercave.com/wp/FVzS3zs.jpg");
+        }
+        100% {
+          background-image: url("https://th.bing.com/th/id/OIP.xh9A3PUb9bef7y-BICWOxAHaEK?rs=1&pid=ImgDetMain");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-img"></div>
+  </body>
+</html>

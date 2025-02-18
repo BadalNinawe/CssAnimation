@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ffe4d6;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .universe {
+        width: 40vw;
+        border-radius: 10px;
+        aspect-ratio: 1;
+        background-color: #efb699;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: skychange 10s ease-in-out;
+      }
+      .sun {
+        width: 20vw;
+        aspect-ratio: 1;
+        background-color: #51220a;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        &::after {
+          content: " ";
+          position: absolute;
+          border-radius: inherit;
+          top: 0;
+          left: 0;
+          width: inherit;
+          aspect-ratio: 1;
+          background-color: #000;
+          animation: moonwalk 10s ease-in-out infinite;
+        }
+      }
+      @keyframes moonwalk {
+        0% {
+          translate: 100%;
+        }
+        50% {
+          translate: 0%;
+          scale: 0.9;
+        }
+        100% {
+          translate: -100%;
+          scale: 0.9;
+        }
+      }
+      @keyframes skychange {
+        0% {
+          background-color: #dd5a1d;
+        }
+        25% {
+          background-color: #31bb9d;
+        }
+        50% {
+          background-color: #000;
+        }
+        75% {
+          background-color: #31bb9d;
+        }
+        100% {
+          background-color: #dd5a1d;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="universe">
+      <div class="sun"></div>
+    </div>
+  </body>
+</html>
